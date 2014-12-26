@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var PushBullet = require('pushbullet');
 var notify = require('node-notifier');
 var util = require('util');
@@ -13,7 +15,8 @@ stream.connect();
 
 stream.on('connect', function() {
     notify.notify({
-        title: 'Connected to Pushbullet stream'
+        title: 'Pushbullet',
+        body: 'Connected to stream'
     });
     stream.on('message', handleMessage);
 });
