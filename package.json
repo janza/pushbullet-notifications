@@ -1,0 +1,22 @@
+{
+  "name": "pushbullet-notifications",
+  "version": "1.0.0",
+  "description": "Show pushbullet notifications on desktop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+      "pushbullet-notify": "index.js"
+  },
+  "keywords": [
+    "notifications",
+    "desktop"
+  ],
+  "author": "Josip Janzic",
+  "license": "ISC",
+  "dependencies": {
+    "node-notifier": "^4.0.3",
+    "pushbullet": "^1.4.2"
+  }
+}
